@@ -20,3 +20,6 @@ cd /vagrant/stournament
 python tournament_test.py
 ```
 
+### Citations
+
+Udacity and StackOverflow forums.
