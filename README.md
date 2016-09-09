@@ -10,13 +10,26 @@ Virtual Box, Vagrant, Python
 ### How to install:
 
 * [Clone the fullstack-nanodegree-vm](https://github.com/udacity/fullstack-nanodegree-vm) in the vagrant directory of the clone
-* Delete the existing tournament directory and clone this [repo](https://github.com/SaraVagnarelli/sTournament.git)
+* Delete the existing tournament directory and clone this [repo](https://github.com/saravgn/stournament.git)
 * In the command line navigate to the vagrant directory and launch the VM
 
-Use this command to navigate in the VM to the vagrant directory:
+```bash
+vagrant$ vagrant up
+vagrant$ vagrant ssh
+```
+* Navigate in the VM to the project directory inside the vagrant directory
 
 ```bash
 cd /vagrant/stournament
+```
+
+* Create the database schema
+```bash
+psql - f tournament.sql
+```
+
+* Then you can execute the tests module
+```bash
 python tournament_test.py
 ```
 
